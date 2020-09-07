@@ -1,0 +1,15 @@
+okular
+evolution
+pidgin
+libroffice-base
+libreoffice-langpack-pl
+libreoffice-langpack-de
+keepassxc
+dosbox
+gnome-shell-extension-dash-to-dock
+gnome-shell-extension-desktop-logo
+xclip
+qpdf
+kolourpaint
+gimp
+tesseract

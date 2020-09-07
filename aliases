@@ -1,0 +1,34 @@
+#.aliases
+#mszeptuch aliases
+
+#moje aliasy:
+alias writer='/usr/lib64/libreoffice/program/swriter'
+alias math='/usr/lib64/libreoffice/program/smath'
+alias impress='/usr/lib64/libreoffice/program/simpress'
+alias calc='/usr/lib64/libreoffice/program/scalc'
+alias draw='/usr/lib64/libreoffice/program/sdraw'
+alias base='/usr/lib64/libreoffice/program/sbase'
+kapustka=/run/media/mszeptuch/KAPUSTKA/
+alias orca-pl='export LANG=pl_PL.UTF-8 ; orca'
+alias pl='export LANG=pl_PL.UTF-8'
+windows='/mnt/Windows/'
+niemiecki_dom='/mnt/Windows/Users/Maciej/Desktop/pozadek/niemiecki_dom/'
+alias backup='sh /home/mszeptuch/bin/backup.sh -y >> /dev/null'
+alias ukap='umount /run/media/mszeptuch/KAPUSTKA/'
+alias off='shutdown -h now'
+alias info="echo \"wlaczanie filmu z plyty: \\\"mplayer -fs dvd://{sciezka} -dvd-device {urzadzenie}\\\"\""
+alias jdownloader="/home/mszeptuch/jd2/JDownloader2"
+
+#aliases for games:
+alias heroes5="localization=`pwd`;cd /mnt/Windows/Program\ Files\ \(x86\)/Ubisoft/Heroes\ of\ Might\ and\ Magic\ V/bin/; wine H5_Game.exe;cd $localization"
+alias heroes5_kuznia_przeznaczenia="localization=`pwd`;cd /mnt/Windows/Program\ Files\ \(x86\)/Ubisoft/Heroes\ of\ Might\ and\ Magic\ V/bina1/; wine H5_Game.exe;cd $localization"
+alias heroes5_dzikie_chordy="localization=`pwd`; cd /mnt/Windows/Program\ Files\ \(x86\)/Ubisoft/Heroes\ of\ Might\ and\ Magic\ V\ -\ Dzikie\ Hordy/bin/; wine H5_Game.exe;cd $localization"
+alias warblade="/usr/bin/playonlinux --run warblade"
+
+alias rsyncpp="rsync -a --info=progress2 $1 $2"
+alias cls="clear"
+
+alias radio="radio.sh"
+alias discord="~/Documents/discord/Discord"
+alias openshot="/mnt/Windows/MaciekDokumenty/Linux_backup/app/OpenShot-v2.5.1-x86_64.AppImage"
+alias teams-for-linux="~/Documents/teams-for-linux-1.0.5/teams-for-linux"
