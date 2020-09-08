@@ -1,1 +1,2 @@
-gsettings.sh
++ gsettings.sh
+wrzucić tego nowego syntax'a
