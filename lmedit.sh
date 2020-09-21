@@ -15,6 +15,14 @@ if test $1 == "--create" || test $1 == "-c"; then
 		touch $filename
 		echo -e "%% $filename\n%%" >> $filename
 	fi
+elif test $1 == "-a"; then
+	filename=`date +matematyka_%d.%m.%Y.lm`
+	if [ -e "$filename" ]; then
+		echo "WARNING: file $filename alredy exist, and cannot be create"
+	else
+		touch $filename
+		echo -e "%% $filename\n%%" >> $filename
+	fi
 else
 	filename="$1"
 	if [ "$filename" == "" ]; then
