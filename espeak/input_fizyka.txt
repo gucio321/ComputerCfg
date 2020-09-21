@@ -1,0 +1,75 @@
+Temat: Inercjalne i nieinercjalne układy odniesienia. (termin wykonania do czwartku 16.04.)
+Po dzisiejszej lekcji musicie wiedzieć :
+- co to jest układ inercjalny i nieinercjalny
+- dlaczego stosujemy taki podział
+- co to są siły bezwładności
+Przypomnijcie sobie co to był układ odniesienia. iejsze niż rozwiązanie zadania. Zaczniemy więc
+dłuższym niż zwykle wstępem.
+Co to jest układ odniesienia?
+Przypomnę, że układ odniesienia jest to dowolne ciało względem którego opisujemy ruch innych ciał.
+Ruch jadącego po ziemi kierowcy w samochodzie mogę opisać względem 1 – ziemi – i wtedy
+kierowca się porusza lub 2 – względem jakiegoś elementu w samochodzie np. fotela – i wtedy
+kierowca względem tego fotela się nie przemieszcza. Można to sprawdzić umieszczając kamerę w
+tych dwóch układach. W przykładzie pierwszym kamera leży na ziemi. Na nagranym filmie
+zobaczymy, że auto jedzie. W przykładzie drugim, kamerę kładziemy w samochodzie. Na nagranym
+filmie – zobaczymy, że kierowca się nie porusza. Przypomnieliśmy sobie co to znaczy, że układem
+odniesienia jest ziemia lub fotel.
+Po co nam dwa układy odniesienia?
+Przejdźmy teraz do tematu. Czy do opisu zjawisk w przyrodzie nie wystarczy jeden układ odniesienia?
+Okazuje się, że jak jest ich więcej to wtedy jest z czego wybierać. A po co wybierać? Okazuje się, że
+opis danego zjawiska może być trudny do opisania w jednym układzie natomiast w drugim będzie
+dużo prostszy. Uzyskaliśmy już odpowiedź na pytanie: po co nam dwa układy odniesienia opisujące
+to samo zjawisko. Można odpowiedzieć jeszcze inaczej – po prostu nie lubimy się męczyć i
+wymyślamy różne rzeczy, żeby tylko było łatwiej. To jest chyba najlepszy argument za
+wprowadzeniem różnych układów odniesienia tj. inercjalnego i nieinercjalnego.
+Co to są układy inercjalne?
+Wyobraźmy sobie następującą sytuację. Obserwujemy jakieś zjawisko stojąc nieruchomo na ziemi –
+a zatem układem odniesienia jest ziemia. Mierzymy, badamy i wyciągamy wnioski. Okazuje się, że
+każda osoba, która względem nas nie porusza się lub porusza się ruchem jednostajnym otrzyma takie
+same wnioski. Opis zjawisk w tych układach będzie taki sam. Takie układy nazywamy układami
+inercjalnymi.
+Aby zapamiętać wyraz „inercjalny” przypomnę, że inercja to bezwładność – powinno więc nam się to
+kojarzyć z pierwszą zasadą dynamiki Newtona, oraz z ruchem jednostajnym prostoliniowym lub ze
+spoczynkiem. Tak też opisujemy układy inercjalne tzn. układy inercjalne to takie układy, które są
+względem siebie w spoczynku lub poruszają się ruchem jednostajnym prostoliniowym. Albo każdy
+układ odniesienia który porusza się ruchem jednostajnym prostoliniowym względem jakiegoś układu
+inercjalnego jest również układem inercjalnym. Przykłady układów inercjalnych:
+1) jeden człowiek stoi na ziemi a drugi jedzie w pociągu ze stałą szybkością po linii prostej
+2) dwa auta jadą po linii prostej z różnymi szybkościami lecz w tym samym kierunku.
+Co to są układy nieinercjalne?
+Już się domyślamy, że są to układy, które względem siebie są w ruchu zmiennym (przyspieszonym
+lub opóźnionym) lub w ruchu krzywoliniowym np. ruchu po okręgu. Ogólnie mówiąc, jeden
+względem drugiego ma jakieś przyspieszenie (dodatnie lub ujemne). Przypominam, że nawet w ruchu
+po okręgu gdy poruszacie się ze stałą wartością prędkości to i tak występuje przyspieszenie nazywane
+„dośrodkowym”. A zatem nawet w ruchu po okręgu mamy przyspieszenie. Przykłady układów
+nieinercjalnych:
+3) układ znajdujący się z aucie, które właśnie rusza (lub hamuje)
+4) układ znajdujący się w windzie która rusza (lub hamuje)
+5) układ znajdujący się na karuzeli która się kręci
+Jak jest różnica, w którym z układów opisujemy zjawiska?
+Okazuje się, że różnica jest bardzo duża, choć skala trudności podobna.
+Podstawową sprawą jest to, że poznane przez nas zasady Newtona obowiązują w układach
+inercjalnych. W momencie gdy je poznawaliśmy bardziej skupiliśmy się na treści niż na tym gdzie
+można z nich korzystać. Nie martwcie się jednak, że zasad tych uczyliście się na próżno
+W układach nieinercjalnych też skorzystamy z 2 i 3 zasady ale trzeba będzie zrobić jedną małą zmianę
+o której powiemy później.
+Przykład 1. Zerknijcie na rysunek poniżej. Przedstawia wiszącą na siłomierzu kulę obserwowaną w
+dwóch układach inercjalnych.
+Człowiek jedzie w windzie ze stałą prędkością – jest więc w układzie inercjalnym. Widzi, że siły
+działające na kulkę się równoważą ... więc jest ona w spoczynku – zgodnie z pierwszą zasadą
+dynamiki Newtona. Chłopcy siedzą na schodach nieruchomo są więc w układzie inercjalnym. Patrząc
+na kulkę widzą, że siły działające na kulkę się równoważą ... więc porusza się ona ruchem
+jednostajnym prostoliniowym – zgodnie z pierwszą zasadą dynamiki Newtona. Wszyscy więc
+potwierdzą słuszność pierwszej zasady Newtona.
+Wiosek: układ związany ze schodami oraz układ odniesienia związany z windą są układami
+inercjalnymi, w których dobrze działa pierwsza zasada dynamiki Newtona.
+Przykład 2. Ponownie dwa układy inercjalne. Opisywanym zjawiskiem jest wisząca na sznurku kulka.
+bardzo podobne do przykładu pierwszego.
+Kierowca widzi, że w jego układzie związanym z samochodem jadącym ze stałą prędkością, siły
+działające na kulkę się równoważą ... więc jest ona w spoczynku.
+Ludzie pod drzewem, których układ odniesienia związany jest z ziemią, widzą, że siły działające na
+kulkę się równoważą ... więc porusza się ona ruchem jednostajnym prostoliniowym.
+Wszyscy więc potwierdzą słuszność pierwszej zasady.
+Wiosek: układ związany z ziemią oraz układ odniesienia związany z samochodem są układami
+inercjalnymi.
+

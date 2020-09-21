@@ -13,3 +13,4 @@ qpdf
 kolourpaint
 gimp
 tesseract
+espeak
