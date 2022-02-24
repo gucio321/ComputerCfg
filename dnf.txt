@@ -14,3 +14,4 @@ kolourpaint
 gimp
 tesseract
 espeak
+gnome-tweak-tool
