@@ -194,4 +194,5 @@ gsettings set org.gnome.shell app-picker-view "uint32 1"
 gsettings set org.gnome.desktop.interface gtk-theme 'HighContrast'
 
 
-
+# screencast
+gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 600
