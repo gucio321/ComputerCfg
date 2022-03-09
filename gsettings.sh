@@ -15,20 +15,15 @@
 
 #dconf-editor
 
-
-
-
-
 # set gnome settings to default
 # RESET
 dconf reset -f /org/gnome/
 
-
+# disable terminal alert sound
+gsettings get org.gnome.desktop.sound event-sounds false
 
 #klawiatura (region i jezyk)
 gsettings set org.gnome.desktop.input-sources  sources '[("xkb", "pl"), ("xkb", "de+qwerty")]'
-
-
 
 # Keybings
 #for i in `gsettings list-keys org.gnome.desktop.wm.keybindings `;do echo -n "$i "; gsettings get org.gnome.desktop.wm.keybindings $i;done|grep -i terminal
@@ -41,12 +36,10 @@ gsettings set org.gnome.desktop.interface cursor-size 80
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
 gsettings set org.gnome.desktop.interface clock-show-date true
 
-
 # background
 #sudo dnf install heisenbug-backgrounds-gnome
 gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/heisenbug/extras/green-grass.jpg'
 gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/heisenbug/extras/under-a-bridge.jpg'
-
 
 # nautilus
 gsettings set org.gtk.Settings.FileChooser sort-directories-first true
@@ -54,8 +47,6 @@ gsettings set org.gnome.nautilus.window-state maximized true
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.desktop.interface icon-theme 'HighContrast'
 gsettings set org.gtk.Settings.FileChooser show-hidden true
-
-
 
 #dash-to-dock
 # activate
@@ -85,7 +76,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
 # fafourite apps
 gsettings set org.gnome.shell favorite-apps "['start_wygaszacz.desktop', 'stop_wygaszacz.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'keybase.desktop', 'pidgin.desktop']"
 
-
 # TERMINAL
 profile=`gsettings get org.gnome.Terminal.ProfilesList default`
 profile=${profile:1:-1}
@@ -95,10 +85,8 @@ gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/prof
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-color 'rgb(0,0,0)'
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" foreground-color 'rgb(255,255,255)'
 
-
 # gnome-system-monitor
 gsettings set org.gnome.gnome-system-monitor.proctree sort-col 8
-
 
 #shortcuts
 #volume
@@ -116,8 +104,6 @@ gsettings set org.gnome.desktop.a11y.magnifier mag-factor 4.0
 gsettings set org.gnome.desktop.a11y always-show-universal-access-status true
 gsettings set org.gnome.desktop.a11y.magnifier show-cross-hairs true
 gsettings set org.gnome.desktop.a11y.magnifier cross-hairs-length 20
-
-
 
 #custom shortcuts
 # 
@@ -155,10 +141,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/ binding '<Alt>3'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/ command 'umount /run/media/mszeptuch/KAPUSTKA'
 
-
-
-
-
 #pasek - ciag dalszy
 # transparency dynamic
 gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode 'DYNAMIC'
@@ -167,7 +149,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock max-alpha 1.0
 gsettings set org.gnome.shell.extensions.dash-to-dock min-alpha 0.0
 # sweech workspaces - scroll action
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'switch-workspace'
-
 
 #logo - penguin
 gsettings set org.gnome.shell enabled-extensions "['dash-to-dock@micxgx.gmail.com', 'background-logo@fedorahosted.org']"
@@ -182,17 +163,11 @@ gsettings set org.fedorahosted.background-logo-extension logo-opacity "uint32 25
 gsettings set org.gnome.evolution.window maximized true
 gsettings set org.gnome.evolution.mail paned-size 1554579
 
-
 #ikony aplikacji
 gsettings set org.gnome.shell app-picker-view "uint32 1"
 
-
-
-
-
 # high contrast
 gsettings set org.gnome.desktop.interface gtk-theme 'HighContrast'
-
 
 # screencast
 gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 600
