@@ -50,7 +50,13 @@ gsettings set org.gtk.Settings.FileChooser show-hidden true
 
 #dash-to-dock
 # activate
-gsettings set org.gnome.shell enabled-extensions "['dash-to-dock@micxgx.gmail.com']"
+gsettings set org.gnome.shell enabled-extensions "['dash-to-dock@micxgx.gmail.com', 'background-logo@fedorahosted.org', 'sound-output-device-chooser@kgshank.net']"
+# sound device chooser
+gsettings set org.gnome.shell.extensions.sound-output-device-chooser hide-on-single-device true
+gsettings set org.gnome.shell.extensions.sound-output-device-chooser integrate-with-slider true
+#volume above 100%
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
+gsettings set org.gnome.desktop.interface clock-show-seconds true
 # position
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 #￼szeroki pasek
@@ -151,7 +157,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock min-alpha 0.0
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'switch-workspace'
 
 #logo - penguin
-gsettings set org.gnome.shell enabled-extensions "['dash-to-dock@micxgx.gmail.com', 'background-logo@fedorahosted.org']"
 gsettings set org.fedorahosted.background-logo-extension logo-position "bottom-center"
 gsettings set org.fedorahosted.background-logo-extension logo-size 9.0
 gsettings set org.fedorahosted.background-logo-extension logo-always-visible true
