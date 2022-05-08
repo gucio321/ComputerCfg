@@ -20,7 +20,7 @@
 dconf reset -f /org/gnome/
 
 # disable terminal alert sound
-gsettings get org.gnome.desktop.sound event-sounds false
+gsettings set org.gnome.desktop.sound event-sounds false
 
 #klawiatura (region i jezyk)
 gsettings set org.gnome.desktop.input-sources  sources '[("xkb", "pl"), ("xkb", "de+qwerty")]'
@@ -74,7 +74,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items true
 # icon size
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
 # fafourite apps
-gsettings set org.gnome.shell favorite-apps "['start_wygaszacz.desktop', 'stop_wygaszacz.desktop', 'brave.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'keybase.desktop', 'pidgin.desktop']"
+gsettings set org.gnome.shell favorite-apps "['start_wygaszacz.desktop', 'stop_wygaszacz.desktop', 'brave-browser.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'keybase.desktop', 'pidgin.desktop']"
 
 # TERMINAL
 profile=`gsettings get org.gnome.Terminal.ProfilesList default`
@@ -113,9 +113,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Alt>w'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'gnome-terminal'
 # brave
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name 'brave'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name 'brave-browser'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding '<Alt>e'
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command 'brave'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command 'brave-browser'
 # libreoffice writer
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ name 'libreoffice-writer'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ binding '<Alt>1'
@@ -160,11 +160,11 @@ gsettings set org.fedorahosted.background-logo-extension logo-file "/home/mszept
 gsettings set org.fedorahosted.background-logo-extension logo-opacity "uint32 255"
 
 #evolution
-gsettings set org.gnome.evolution.window maximized true
+#gsettings set org.gnome.evolution.window maximized true
 gsettings set org.gnome.evolution.mail paned-size 1554579
 
 #ikony aplikacji
-gsettings set org.gnome.shell app-picker-view "uint32 1"
+# gsettings set org.gnome.shell app-picker-view "uint32 1"
 
 # high contrast
 gsettings set org.gnome.desktop.interface gtk-theme 'HighContrast'
