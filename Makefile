@@ -1,11 +1,10 @@
 .PHONY: Action needed to cnfigure Maciek user profile
 
-# variables
-repo_home = /home/mszeptuch/ComputerCFG
-
+## all: setup everything
+all: install-pkgs gsettings
 
 gsettings:
-	/bin/bash -c "$(repo_home)/gsettings.sh"
+	/bin/bash -c "./gsettings.sh"
 
 install-pkgs:
-	for pkg in `cat $(repo_home)/dnf.txt`; do dnf -y install $pkg;done
+	/bin/bash -c "sudo dnf install $(cat dnf.txt)"
