@@ -7,4 +7,4 @@ gsettings:
 	/bin/bash -c "./gsettings.sh"
 
 install-pkgs:
-	/bin/bash -c "sudo dnf install $(cat dnf.txt)"
+	sudo dnf install $$(cat dnf.txt)
