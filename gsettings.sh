@@ -100,6 +100,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['<Prima
 gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "['<Primary><Shift>Right']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys volume-mute "['<Primary><Shift>Down']"
 
+
 #switch applications
 gsettings set org.gnome.desktop.wm.keybindings switch-applications "@as []"
 gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
@@ -113,7 +114,21 @@ gsettings set org.gnome.desktop.a11y.magnifier cross-hairs-length 20
 
 #custom shortcuts
 # 
-gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/',
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/',
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/',
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/',
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/',
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/',
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/',
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/', 
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/', 
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/'
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/'
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/'
+]"
+
 # terminal
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'terminal'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Alt>w'
@@ -142,10 +157,31 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/ name 'libreoffice-math'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/ binding '<Alt>2'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/ command '/usr/lib64/libreoffice/program/oosplash --math'
-# umount KAPUSTKA
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/ name 'umount_KAPUSTKA'
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/ binding '<Alt>3'
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/ command 'umount /run/media/mszeptuch/KAPUSTKA'
+
+# use old good screenshotting system:
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/ name 'Screenshot to clipboard'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/ binding '<Primary>Print'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/ command 'gnome-screenshot --clipboard'
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/ name 'Screenshot of area'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/ binding '<Shift>Print'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/ command 'gnome-screenshot --area'
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/ name 'Screenshot of area to clipboard'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/ binding '<Primary><Shift>Print'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/ command 'gnome-screenshot --clipboard --area'
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/ name 'Screenshot of window'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/ binding '<Alt>Print'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/ command 'gnome-screenshot --window'
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/ name 'Screenshot of window'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/ binding '<Alt>Print'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/ command 'gnome-screenshot --window'
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/ name 'Screenshot of window'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/ binding '<Shift><Alt>Print'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/ command 'gnome-screenshot --clipboard --window'
 
 #pasek - ciag dalszy
 # transparency dynamic
