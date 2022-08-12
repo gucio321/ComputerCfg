@@ -124,8 +124,8 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/',
 '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/', 
 '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/', 
-'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/'
-'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/'
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/',
+'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/',
 '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/'
 ]"
 
