@@ -212,4 +212,5 @@ gsettings set org.gnome.desktop.interface gtk-theme 'HighContrast'
 gsettings set org.gnome.desktop.a11y.interface high-contrast true
 
 # screencast
-gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 600
+# TODO
+#gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 600
