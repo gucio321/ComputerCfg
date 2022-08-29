@@ -8,3 +8,4 @@ gsettings:
 
 install-pkgs:
 	sudo dnf install -y $$(cat dnf.txt)
+	/bin/bash -c "./audio.sh"

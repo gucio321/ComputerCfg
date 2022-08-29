@@ -14,4 +14,3 @@ gimp
 tesseract
 espeak
 gnome-tweak-tool
-ffmpeg
