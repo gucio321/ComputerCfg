@@ -4,8 +4,8 @@
 all: install-pkgs gsettings
 
 gsettings:
-	/bin/bash -c "./gsettings.sh"
+	/bin/bash -c "./scripts/setup_gnome.sh"
 
 install-pkgs:
-	sudo dnf install -y $$(cat dnf.txt)
-	/bin/bash -c "./audio.sh"
+	sudo dnf install -y $$(cat ./scripts/dnf_packages.txt)
+	/bin/bash -c "./scripts/setup_audio.sh"
