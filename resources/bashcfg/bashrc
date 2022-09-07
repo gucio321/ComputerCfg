@@ -17,6 +17,10 @@ set -o vi
 . /home/mszeptuch/.days.sh
 alias espeakpp="espeak -v pl -w $2 -f $1"
 
+if [ -e "~/go/bin"]; then
+        export PATH="$PATH:~/go/bin"
+fi
+
 if [ -d "venv" ]; then
  source venv/bin/activate
 fi
