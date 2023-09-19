@@ -1,7 +1,7 @@
 .PHONY: Action needed to cnfigure Maciek user profile
 
 ## all: setup everything
-all: install-pkgs gsettings bash
+all: install-pkgs gsettings bash vim
 
 # gsettings: setup gnome
 gsettings:
@@ -15,3 +15,6 @@ install-pkgs:
 # bash: setup bash resources
 bash:
 	/bin/bash -c "./scripts/setup_resources.sh"
+
+vim:
+	/bin/bash -c "./scripts/vim.sh"
