@@ -9,6 +9,8 @@ fi
 
 # User specific aliases and functions
 export PS1='[\W ($?) ]\$ '
+export EDITOR="/usr/bin/vim"
+export PATH="$PATH:$HOME/bin"
 set -o vi
 . /home/mszeptuch/.aliases
 . /home/mszeptuch/.podr
@@ -17,8 +19,8 @@ set -o vi
 . /home/mszeptuch/.days.sh
 alias espeakpp="espeak -v pl -w $2 -f $1"
 
-if [ -e "~/go/bin" ]; then
-        export PATH="$PATH:~/go/bin"
+if [ -e "$HOME/go/bin" ]; then
+        export PATH="$PATH:$HOME/go/bin"
 fi
 
 if [ -d "venv" ]; then
