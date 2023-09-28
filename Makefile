@@ -11,6 +11,7 @@ gsettings:
 install-pkgs:
 	sudo dnf install -y $$(cat ./scripts/dnf_packages.txt)
 	/bin/bash -c "./scripts/setup_audio.sh"
+	echo "log out and back in and then run make snap"
 
 # bash: setup bash resources
 bash:
@@ -18,3 +19,6 @@ bash:
 
 vim:
 	/bin/bash -c "./scripts/vim.sh"
+
+snap:
+	sudo snap install electron-mail

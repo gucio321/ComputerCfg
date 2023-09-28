@@ -14,3 +14,4 @@ gimp
 tesseract
 espeak
 gnome-tweak-tool
+snapd
