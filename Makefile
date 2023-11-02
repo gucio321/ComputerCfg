@@ -1,7 +1,7 @@
 .PHONY: Action needed to cnfigure Maciek user profile
 
 ## all: setup everything
-all: install-pkgs gsettings bash vim
+all: install-pkgs gsettings bash vim snap brave keybase
 
 # gsettings: setup gnome
 gsettings:
@@ -21,4 +21,15 @@ vim:
 	/bin/bash -c "./scripts/vim.sh"
 
 snap:
+	sudo systemctl enable --now snapd
 	sudo snap install electron-mail
+
+brave:
+	sudo dnf install -y dnf-plugins-core
+	sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+	sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+	sudo dnf install -y brave-browser
+
+keybase:
+	sudo yum install -y https://prerelease.keybase.io/keybase_amd64.rpm
+	run_keybase
