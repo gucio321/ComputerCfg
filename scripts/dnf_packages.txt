@@ -18,3 +18,5 @@ gnome-tweak-tool
 snapd
 python3-virtualenv
 python3-pip
+make
+cmake
