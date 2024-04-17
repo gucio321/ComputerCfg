@@ -86,3 +86,5 @@ I'm going to try this out as I still have problems with suspend
 
 - adding the following to /etc/modprobe.d/nvidia.conf
 - I've called  sudo dracut --force --kver 6.8.5-201.fc39.x86_64 
+- Turned out I had to add mock key again (see attached forum thread) and now it works even without modprobe.d
+  Further updates after new kernel release
