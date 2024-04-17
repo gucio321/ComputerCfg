@@ -1,0 +1,88 @@
+#sudo dnf module list nvidia*
+#sudo dnf module remove nvidia-driver:open-dkms
+
+- I downloaded an official nvidia driver
+- started Downloads/NVIDIA-Linux-x86_64-545.29.06.run
+- installer crated:
+/usr/lib/modprobe.d/nvidia-installer-disable-nouveau.conf,
+        /etc/modprobe.d/nvidia-installer-disable-nouveau.conf
+
+        - rebuilt internfs
+
+        /var/log/nvidia-installer.log
+        - I reboot and try again
+        - Module has compiled
+- I need to shign my module. I log in into rroot to see mok keys (mokutil --list-enroled)
+        - I used /var/lib/dkms/mok.pub
+        - I used /var/lib/dkms/mok.pub as public key
+        - I asked for 32-bit compatible
+        - I added to dkms
+        - I rebuilt interfs
+        - I refused to update x configuration
+        /usr/share/doc/NVIDIA_GLX-1.0/README.txt
+        installation complete
+
+        - I have a problem with my external monitor.
+        - I found this: https://community.kde.org/Plasma/Wayland/Nvidia
+        - I have to say that it worked. I rebooted and added `nvidia_drm.modeset=1` in kernel cmdline parameters and it started to work.
+        I need to configure grub to add this now.
+        - My edit to GRUB_CMDLINE_LINUX - I added nvidia_drm.modeset=1
+        - Now I need to use grub2-mkconfig somehow. The question is how to do this correctly...
+        ```console
+        root@fedora:/etc# ll |grep grub
+        lrwxrwxrwx. 1 root root       22 Jan 15 01:00 grub2.cfg -> ../boot/grub2/grub.cfg
+        lrwxrwxrwx. 1 root root       22 Jan 15 01:00 grub2-efi.cfg -> ../boot/grub2/grub.cfg
+        ```
+
+        SO `grub2-mkconfig -o /boot/grub2/grub.cfg`
+
+        - I'm going to disable intel gpu to check if this helps with wayland glx driver:
+
+        sudo cat > /etc/modprobe.d/blocklist-intelgpu.conf <<EOF
+        blacklist i915
+        EOF
+
+-- 08.04.2024 ---
+dzisiaj, driver przestal działać na najnowszym kernelu (6.8.rc).
+Po research znalazłem, że tne bug był zgłoszony już w styczniu.
+- pobrałem następujący plik: ./NVIDIA-Linux-x86_64-545.29.06.run
+- I found out I ran the old file xD however I need to finish installation first and then run another file
+
+----------------------update 2024.04.15 --------------------
+
+Now I'm on 550.67. I'm going to switch to an official fedora rpmfusion-nonfree nvidia
+release to get rid of strange issues. ref link: https://rpmfusion.org/Howto/NVIDIA#About_this_Howto
+continue in a few minutes
+
+- I've removed /usr/lib/modprobe.d/nvidia-installer-disable-nouveau.conf, and /etc/modprobe.d/nvidia-installer-disable-nouveau.conf
+
+=== Mon Apr 15 03:03:13 PM CEST 2024 ===
+I'm starting the process.
+- running sudo nvidia-uninstall
+- done
+- rebooting
+- it rebooted successfully but I don't know what driver does it use. I suppose nouveau (lspci -k | grep -A 2 -E "(VGA|3D)")
+- it says driver in use nvidia xD
+- running sudo dnf install akmod-nvidia # rhel/centos users can use kmod-nvidia instead
+- I ran int a problem with nvidia-driver module. I disabled it and trying to run above cmd again
+- ok now dnf wants to install correct package (this from rpmfusion-nonfree-nvidia)
+- installed, checking with modinfo -F version nvidia
+- it says ERROR, the website suggest to wait ~5 minutes so waiting... (13:17)
+- ok now it says 550.67 rebooting
+- it booted up, Now executing sudo dnf install xorg-x11-drv-nvidia-cuda
+- everything seems to work, nvidia-smi returns right-llooking output.
+- now trying suspend
+- while scrolling by special notes section I noticed "power" section which I had problems with, executing commands now:
+- sudo dnf install xorg-x11-drv-nvidia-power
+- sudo systemctl enable nvidia-{suspend,resume,hibernate}
+- now trying reboot and suspend
+
+--- 16.04.2024 ---
+
+context:
+oon the forum thread https://forums.developer.nvidia.com/t/font-issue-on-fedora-gnome-wayland-550-67-after-suspend/288975/7
+they say to set additional kernel module's parameters.
+I'm going to try this out as I still have problems with suspend
+
+- adding the following to /etc/modprobe.d/nvidia.conf
+- I've called  sudo dracut --force --kver 6.8.5-201.fc39.x86_64 
