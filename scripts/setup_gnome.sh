@@ -211,6 +211,9 @@ gsettings set org.gnome.evolution.mail paned-size 1554579
 gsettings set org.gnome.desktop.interface gtk-theme 'HighContrast'
 gsettings set org.gnome.desktop.a11y.interface high-contrast true
 
+# Dark theme
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
 # screencast
 # TODO
 #gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 600
