@@ -30,7 +30,7 @@ gsettings set org.gnome.desktop.input-sources  sources '[("xkb", "pl"), ("xkb", 
 
 # mouse
 #gsettings set org.gnome.desktop.interface text-scaling-factor 1.3
-gsettings set org.gnome.desktop.interface cursor-size 80
+gsettings set org.gnome.desktop.interface cursor-size 40
 
 # top bar
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
