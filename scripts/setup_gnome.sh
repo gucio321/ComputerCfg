@@ -186,8 +186,10 @@ gsettings set org.gnome.evolution.mail paned-size 1554579
 gsettings set org.gnome.desktop.interface gtk-theme 'HighContrast'
 gsettings set org.gnome.desktop.a11y.interface high-contrast true
 
-# touchpad gtree-finger press (since gnome 50.0)
+# touchpad three-finger press (since gnome 50.0)
 gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
+# disable tap to click
+gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click false
 
 # Dark theme
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
